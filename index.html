@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItEnAi - Комп'ютерна грамотність для дітей 9-18 років</title>
+    <meta name="description" content="Курс комп'ютерної грамотності для дітей та підлітків в школі ItEnAi. Від основ роботи з комп'ютером до створення власних проектів і сайтів.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">IT</div>
+                    <span class="logo-text">ItEnAi</span>
+                </div>
+                <button class="btn btn-primary header-btn" onclick="scrollToSection('cta')">
+                    Записатися на курс
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Вік: 9-18 років</div>
+                <h1 class="hero-title">
+                    Комп'ютерна<br>
+                    <span class="gradient-text">Грамотність</span>
+                </h1>
+                <p class="hero-description">
+                    Повний курс цифрових навичок для дітей: від основ роботи з комп'ютером 
+                    до створення власних проектів і сайтів
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large" onclick="scrollToSection('cta')">
+                        Розпочати навчання
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline btn-large" onclick="scrollToSection('modules')">
+                        Дізнатися більше
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon stat-icon-blue">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>9 Уроків</h3>
+                        <p>Повна програма навчання</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon stat-icon-purple">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Малі групи</h3>
+                        <p>Індивідуальний підхід</p>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon stat-icon-green">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Сертифікат</h3>
+                        <p>Після завершення курсу</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Modules -->
+    <section id="modules" class="modules">
+        <div class="container">
+            <div class="section-header">
+                <h2>Програма курсу</h2>
+                <p>9 модулів для повного опанування цифровими навичками</p>
+            </div>
+
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="module-badge">2 уроки</div>
+                    </div>
+                    <h3>Основи комп'ютера</h3>
+                    <p>Знайомство з комп'ютером, файлами, браузером</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="module-badge">1 урок</div>
+                    </div>
+                    <h3>Графічний дизайн</h3>
+                    <p>Paint, редагування зображень, створення проектів</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="module-badge">3 уроки</div>
+                    </div>
+                    <h3>Microsoft Office</h3>
+                    <p>Word, Excel, PowerPoint - створення документів</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="module-badge">1 урок</div>
+                    </div>
+                    <h3>Google Сервіси</h3>
+                    <p>Gmail, Google Drive, Forms, Maps</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <polyline points="16,18 22,12 16,6"></polyline>
+                                <polyline points="8,6 2,12 8,18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="module-badge">1 урок</div>
+                    </div>
+                    <h3>Програмування</h3>
+                    <p>Scratch - перші кроки в програмуванні</p>
+                </div>
+
+                <div class="module-card">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="module-badge">1 урок</div>
+                    </div>
+                    <h3>Створення сайтів</h3>
+                    <p>Google Sites/Wix - власне портфоліо</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2>Чому обирають наш курс?</h2>
+                    <p class="benefits-description">
+                        Ми навчаємо не просто використовувати комп'ютер, а мислити цифрово 
+                        та створювати власні проекти.
+                    </p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Практичні навички роботи з комп'ютером</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Створення власних проектів</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Основи програмування для дітей</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Робота з популярними програмами</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Розвиток цифрової грамотності</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span>Сертифікат після завершення курсу</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-image">
+                    <img src="./image/disenadoreperu_2204_LITTLE_PRESCHOOL_LEVEL_PRACTICING_ON_THE_SC_0e69433b-d5d5-457d-ba90-e24236f47244.png" alt="Діти навчаються роботі з комп'ютером" />
+                    <div class="stats-card">
+                        <div class="stats-content">
+                            <div class="stats-icon">100+</div>
+                            <div class="stats-text">
+                                <p class="stats-title">Випускників</p>
+                                <p class="stats-subtitle">За останній рік</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Відгуки учнів</h2>
+                <p>Що кажуть наші випускники</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3>Олександра, 12 років</h3>
+                    <p>"Дуже цікавий курс! Тепер я можу безпечно заходити на веб-сторінки знаючи ,що там можуть бути шахраї!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3>Максим, 14 років</h3>
+                    <p>"Тепер я розумію як можливо уникнути зловмисників. Рекомендую всім!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="star" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <h3>Софія, 10 років</h3>
+                    <p>"Цей курс мені доповнив пильності про захист в інтернеті ,а також як правильно користуватися ним, як розповідали у програмі курсу."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готові почати навчання?</h2>
+                <p>
+                    Приєднуйтесь до нашої спільноти молодих IT-спеціалістів. 
+                    Перший урок - безкоштовно!
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="openRegistrationForm()">
+                        Записатися на безкоштовний урок
+                    </button>
+                    <button class="btn btn-outline btn-large btn-white" onclick="callUs()">
+                        Зателефонувати нам
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon contact-icon-blue">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p>+380931480343</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon contact-icon-purple">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>schoolitenai@gmail.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon contact-icon-green">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Адреса</h3>
+                    <p>м. Кременчук, вул. Полковника Гегечкорі ,б.29</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Записатися на безкоштовний урок</h3>
+                <button class="modal-close" onclick="closeRegistrationForm()">&times;</button>
+            </div>
+            <form class="registration-form" onsubmit="submitRegistration(event)">
+                <div class="form-group">
+                    <label for="childName">Ім'я дитини</label>
+                    <input type="text" id="childName" name="childName" required>
+                </div>
+                <div class="form-group">
+                    <label for="childAge">Вік дитини</label>
+                    <select id="childAge" name="childAge" required>
+                        <option value="">Оберіть вік</option>
+                        <option value="9">9 років</option>
+                        <option value="10">10 років</option>
+                        <option value="11">11 років</option>
+                        <option value="12">12 років</option>
+                        <option value="13">13 років</option>
+                        <option value="14">14 років</option>
+                        <option value="15">15 років</option>
+                        <option value="16">16 років</option>
+                        <option value="17">17 років</option>
+                        <option value="18">18 років</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="parentPhone">Телефон батьків</label>
+                    <input type="tel" id="parentPhone" name="parentPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="parentEmail">Email батьків</label>
+                    <input type="email" id="parentEmail" name="parentEmail" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">
+                    Записатися на урок
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">IT</div>
+                    <span class="logo-text">ItEnAi</span>
+                </div>
+                <p>© 2025 ItEnAi School. Всі права захищені. Розвиваємо майбутнє разом!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
