@@ -401,7 +401,7 @@
                 <h3>Записатися на безкоштовний урок</h3>
                 <button class="modal-close" onclick="closeRegistrationForm()">&times;</button>
             </div>
-            <form class="registration-form" onsubmit="submitRegistration(event)">
+            <form id="contactForm" class="registration-form" action="https://formspree.io/f/movnnpnq" method="POST">
                 <div class="form-group">
                     <label for="childName">Ім'я дитини</label>
                     <input type="text" id="childName" name="childName" required>
@@ -434,6 +434,7 @@
                     Записатися на урок
                 </button>
             </form>
+            <p id="status" style="margin-top:10px; font-weight:bold;"></p>
         </div>
     </div>
 
@@ -451,5 +452,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
