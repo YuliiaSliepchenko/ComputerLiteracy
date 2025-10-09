@@ -161,14 +161,33 @@ p {
 
 /* Hero Section */
 .hero {
+    position: relative;
     background: url('https://us.v-cdn.net/6036147/uploads/NBBG6SPV956V/computer-classes-for-kids.jpg') center/cover;
     padding: 80px 0;
     text-align: center;
+    transition: transform 0.6s ease, filter 0.6s ease, box-shadow 0.6s ease;
+    overflow: hidden; /* щоб ефект не виходив за межі */
 }
 
+/* Ефект при наведенні */
+.hero:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+    box-shadow: 0 25px 60px rgba(0, 255, 200, 0.25);
+}
+
+/* Трохи м’якше при кліку */
+.hero:active {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+/* Вміст всередині блоку */
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2; /* щоб текст не тьмянів при ховері */
 }
 
 .hero-title {
@@ -300,7 +319,7 @@ p {
 .module-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 16px;
 }
 
@@ -334,12 +353,14 @@ p {
     font-weight: 600;
     color: #1f2937;
     margin-bottom: 8px;
+    text-align: -webkit-center;
 }
 
 .module-card p {
     color: #6b7280;
     margin: 0;
     font-size: 16px;
+    text-align: -webkit-center;
 }
 
 /* Benefits Section */
@@ -394,6 +415,7 @@ p {
 
 .benefits-image {
     position: relative;
+    border-radius: 16px;
 }
 
 .benefits-image img {
@@ -402,6 +424,20 @@ p {
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+/* Ефект при наведенні */
+.benefits-image:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Трохи “м’якше” при натисканні */
+.benefits-image:active img {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
 }
 
 .stats-card {
@@ -762,7 +798,19 @@ p {
         font-size: 2rem;
     }
 }
+/* >=1024px — рівно 3 колонки */
+@media (min-width: 1024px) {
+  .modules-grid {
+    display: block;
+  }
+}
 
+/* >=1440px — останній елемент по центру, тільки коли він «самотній» (позиція 3n+1) */
+@media (min-width: 1440px) {
+  .modules-grid {
+    display: block;
+  }
+}
 @media (min-width: 640px) {
     .hero-buttons {
         flex-direction: row;
